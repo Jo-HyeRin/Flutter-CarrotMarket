@@ -22,7 +22,12 @@ AppBarTheme appTheme() {
 }
 
 BottomNavigationBarThemeData bottomNativationbarTheme() {
-  return BottomNavigationBarThemeData(selectedItemColor: Colors.orange);
+  return BottomNavigationBarThemeData(
+    type: BottomNavigationBarType.fixed,
+    backgroundColor: Colors.white,
+    selectedItemColor: Colors.orange,
+    unselectedItemColor: Colors.black,
+  );
 }
 
 ThemeData theme() {
