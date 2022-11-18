@@ -15,7 +15,8 @@ TextTheme textTheme() {
 AppBarTheme appTheme() {
   return AppBarTheme(
     centerTitle: false,
-    color: Colors.white,
+    backgroundColor: Colors.white,
+    foregroundColor: Colors.black, // 글자색
     elevation: 0.0,
     titleTextStyle: textTheme().headline6,
   );
