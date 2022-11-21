@@ -28,10 +28,12 @@ class ProductItem extends StatelessWidget {
     return ClipRRect(
       borderRadius: BorderRadius.circular(10),
       child: CachedNetworkImage(
+        // Image.network는 내가 만든 네트워크가 아니므로 웹이 아닌 앱에서 확인해야 이미지 보임.
         imageUrl: product.urlToImage,
         width: 115,
         height: 115,
         fit: BoxFit.cover,
+        // Progress 적용하기(이미지로딩)
         progressIndicatorBuilder: (context, url, progress) => CircularProgressIndicator(
           value: progress.progress,
         ),

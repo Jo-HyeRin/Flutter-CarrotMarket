@@ -1,3 +1,4 @@
+import 'package:carrot_market/view/components/build_app_bar.dart';
 import 'package:flutter/material.dart';
 
 class ChattingPage extends StatelessWidget {
@@ -5,8 +6,9 @@ class ChattingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text("ChattingPage"),
+    return Scaffold(
+      appBar: BuildAppBar(),
+      body: Text("ChattingPage"),
     );
   }
 }

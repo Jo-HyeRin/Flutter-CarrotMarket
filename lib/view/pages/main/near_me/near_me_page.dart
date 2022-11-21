@@ -1,3 +1,4 @@
+import 'package:carrot_market/view/components/build_app_bar.dart';
 import 'package:flutter/material.dart';
 
 class NearMePage extends StatelessWidget {
@@ -5,8 +6,9 @@ class NearMePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text("NearMePage"),
+    return Scaffold(
+      appBar: BuildAppBar(),
+      body: Text("NearMePage"),
     );
   }
 }

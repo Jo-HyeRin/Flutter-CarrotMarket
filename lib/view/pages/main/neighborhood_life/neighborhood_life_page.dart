@@ -1,3 +1,4 @@
+import 'package:carrot_market/view/components/build_app_bar.dart';
 import 'package:flutter/material.dart';
 
 class NeighborhoodLifePage extends StatelessWidget {
@@ -5,8 +6,9 @@ class NeighborhoodLifePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text("NeighborhoodLifePage"),
+    return Scaffold(
+      appBar: BuildAppBar(),
+      body: Text("NeighborhoodLife"),
     );
   }
 }
