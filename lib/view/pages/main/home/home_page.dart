@@ -1,5 +1,5 @@
 import 'package:carrot_market/models/product.dart';
-import 'package:carrot_market/view/components/product_item.dart';
+import 'package:carrot_market/view/pages/main/home/components/product_item.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
